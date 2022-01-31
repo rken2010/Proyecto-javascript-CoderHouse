@@ -1,0 +1,17 @@
+footer{
+    display:flex;
+    flex-wrap: nowrap;
+    background-color:$color-primario;
+    justify-content: space-around;
+    padding: 0.7em;
+    
+    h2{
+        font-size: 10;
+        font-family: $fuente-titulos;
+    }
+    a{
+        
+        color:$color-extra;
+    }
+    
+}

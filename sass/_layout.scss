@@ -1,0 +1,52 @@
+@import "./utilidades";
+
+// SECTION MENÚ // 
+
+.catalogo__menu{ 
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .menu__producto{ position:relative}
+    .card__img{ 
+        position: absolute;
+        top:0;
+        right:0;
+    }
+    .card__txt{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+}
+
+// FORMULARIOS //
+.contacto{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em;
+
+    @include form;
+    
+}
+@media screen and (min-width:47em){
+.contacto{
+    display: grid;
+    @include form;
+    grid-template-columns: 25px 1fr 1fr 1fr 15px;
+    grid-template-rows: 25px 1fr 1fr 15px;
+    gap: 1.5em;
+    grid-template-areas:
+          ". . . . ."
+          ". newsletter newsletter  consultas ."
+          ". newsletter newsletter  consultas ."
+          ". . . . .";
+     
+      .newsletter { grid-area: newsletter; }
+      .consultas { grid-area: consultas;}
+      
+}
+}
+

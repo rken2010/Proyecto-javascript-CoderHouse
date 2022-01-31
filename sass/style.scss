@@ -1,0 +1,43 @@
+@import "./base";
+@import "./header";
+@import "./footer";
+@import "./utilidades";
+@import "./layout";
+
+
+.card__img{
+    border-radius: 40px;
+    &:hover{
+        opacity: 0.2;
+        z-index: -1;
+    }
+    img{
+        border-radius: 40px;
+        max-width: 100%;
+        }
+    }
+.card__txt{
+    width: 16.5em;
+    color: white;
+    background-color: $color-extra;
+    &:hover{
+        z-index: 1;
+    }
+
+}
+.menu__producto{
+    border-radius: 40px;;
+}
+#nombre , #email{
+    width:18.5em;
+    height: 2em;
+    margin: 0.5em;
+    border-radius: 5px;
+    border: none;
+
+}
+    
+
+
+
+

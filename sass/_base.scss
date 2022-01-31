@@ -1,0 +1,97 @@
+// RESET // 
+*{
+    margin: 0;
+    padding:0;
+}
+//Letras de google Fonts //
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+// FUENTES TIPOGRAFICAS //
+$fuente-links: 'Goudy Bookletter 1911', serif;
+$fuente-parrafos: 'Montaga', serif;
+$fuente-titulos: 'Roboto Slab', serif;
+$funete-titulos-2: 'Poppins', sans-serif;
+
+// PALETA COLORES //
+$color-0: #F25C05;
+$color-primario: #F27405;
+$color-secundario: #F29C50;
+$color-terciario:#BFB636;
+$color-extra: #5C6373;
+
+// OTRAS PALETAS DE ADOBE COLOR //
+
+/* Color Theme Swatches in Hex */
+$Tasty-sushi-rolls-on-white-background-1-hex: #F23545;
+$Tasty-sushi-rolls-on-white-background-2-hex: #F2DC6B;
+$Tasty-sushi-rolls-on-white-background-3-hex: #F26B1D;
+$Tasty-sushi-rolls-on-white-background-4-hex: #F21905;
+$Tasty-sushi-rolls-on-white-background-5-hex: #F2F2F2;
+
+/* Color Theme Swatches in Hex */
+$baked-hot-sushi-rolls-on-a-dark-background-Hot-fried-Sushi-Roll-Sushi-menu-1-hex: #F29F05;
+$baked-hot-sushi-rolls-on-a-dark-background-Hot-fried-Sushi-Roll-Sushi-menu-2-hex: #F28705;
+$baked-hot-sushi-rolls-on-a-dark-background-Hot-fried-Sushi-Roll-Sushi-menu-3-hex: #F25C05;
+$baked-hot-sushi-rolls-on-a-dark-background-Hot-fried-Sushi-Roll-Sushi-menu-4-hex: #8C2703;
+$baked-hot-sushi-rolls-on-a-dark-background-Hot-fried-Sushi-Roll-Sushi-menu-5-hex: #0D0D0D;
+
+// BOTONES //
+.bt-compra {
+	background-color:$color-0;
+	border:3px solid $color-secundario;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	padding:10px 10px;
+	&:hover {
+	background-color:$color-primario;
+    }
+}
+.bt-mapa{
+	margin:1.5em auto;
+	padding:10px 10px;
+	width: 30%;
+	background-color: transparent;
+	border:3px solid black;
+	font-family:Arial;
+	font-size:14px;
+
+	&:hover {
+	background-color:$color-primario;
+    }
+}
+.bt-carrito{
+	margin:2em;
+	width: 3em;
+	height: 3em;
+	background-color: black;
+	border-radius: 50px;
+	border:5px solid white;
+	color: white;
+	position: fixed;
+	bottom: 0;
+	right:0 ;
+	z-index: 2;
+}
+.bt-mas_menos{
+	margin:12px;
+	border-radius: 50px;
+	background-color: $color-extra;
+	padding:0.2em;
+	color: white;
+	text-align: center;
+	&:hover{
+		opacity:0.8;
+	}
+
+}
+.carta{
+	background-image: url(../img/fondo-menu.png);
+	background-size: cover;
+}
+

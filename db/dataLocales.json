@@ -1,0 +1,5 @@
+[
+    {"nombre":"SushiWorld I", "localidad": "MORON", "direccion":"25 de Mayo 658", "telefono":"4696-6969", "imagen":"./img/local--moron.jpg", "mapa":"https://goo.gl/maps/Xqh1tEdwVfF1R8wz6"},
+    {"nombre":"SushiWorld II", "localidad": "SAN JUSTO", "direccion":"Av de Mayo 658", "telefono":"4777-7777", "imagen":"./img/local--san_justo.jpg", "mapa":"https://goo.gl/maps/kbQskxUjsC9Ae3Xn8"}
+ ]
+  
