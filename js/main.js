@@ -89,9 +89,16 @@ function agregarAlPedido( id ) {
       })
     }
 
-      renderPedido();  
+      renderPedido();
+
          
   }
+
+function cantidadPedido() {
+  badge = document.getElementById("badge");
+  badge.innerHTML = "";
+  badge.innerHTML = compra.length;
+}
 
 function buscarItem( id ) {
     const producto = menu.find( element => element.id == id )
@@ -223,6 +230,7 @@ function renderPedido(){
     <td>TOTAL: $${importePedido()}</td>
   `
   localStorage.setItem( 'Pedido', JSON.stringify(compra) );
+  cantidadPedido();
 }
 
 // INICIALIZAR FUNCIONES // 
