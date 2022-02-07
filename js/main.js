@@ -68,7 +68,7 @@ function agregarAlPedido( id ) {
       
       Swal.fire({
         title: 'Agregado',
-        text: `${repetido.nombre}`+"fue agregado",
+        text: `${repetido.nombre}`+" fue agregado",
         imageUrl: `${repetido.foto}`,
         imageWidth: 200,
         imageHeight: 200,
@@ -77,7 +77,6 @@ function agregarAlPedido( id ) {
     }
     else{
       let comida = buscarItem(id);
-      comida.cantidad = parseInt ( comida.cantidad )+1
       compra.push(comida);
 
       Swal.fire({
@@ -118,18 +117,42 @@ function borrarProducto( id ) {
   }
 
  
-// Funciones de compra //
+// FUNCIONES DE COMPRA //
 
 var compra = JSON.parse(localStorage.getItem('Pedido')) || [];
 
-// VACIAR CARRITO
-  const vaciar = document.getElementById("vaciarPedido");
-  vaciar.addEventListener("click", ()=>{
+// Vaciar Carrito //
+function vaciarCarrito (){
   compra =[];
   localStorage.setItem('Pedido', JSON.stringify(compra));
   renderPedido();
+  };
+
+const vaciar = document.getElementById("vaciarPedido");
+  vaciar.addEventListener("click", ()=>{
+    Swal.fire({
+      title: 'Esta seguro?',
+      text: "Desea reiniciar su pedido? No puede revertirse la acción",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si, borrar el pedido'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire(
+          'Vacio!',
+          'Su pedido fue borrado.',
+          'success'
+        )
+      }
+      vaciarCarrito();
+    })
+   
   });
 
+
+// Calcular total del pedido //
 function importePedido(){
   let totalPedido = 0;
     compra.forEach((item) => {
@@ -137,7 +160,30 @@ function importePedido(){
     })
     return totalPedido;
   }
+// Terminar Compra //
+  const terminar = document.getElementById("terminarPedido")
+  terminar.addEventListener("click", ()=> {
+    if (compra.length > 0){
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Su pedido fue realizado',
+      showConfirmButton: false,
+      timer: 1500
+    })
+    vaciarCarrito();
+    }
+    else {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...Su pedido esta vacio',
+        text: 'Elija una comida de nuestro menú!',
+        footer: '<a href="#catalogoMenu">Ver el Menú</a>'
+      })
+    }
 
+  })
+// RENDERIZADO //
 function renderMenu(){
 const containerMenu = document.querySelector("#catalogoMenu");
 menu.forEach ((menu) => {

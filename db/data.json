@@ -4,42 +4,42 @@
         "nombre": "Toshima 12 piezas", 
         "descripcion":"Rolls: Eve x4 Phila x4 Crunch x4", 
         "precio": "780", 
-        "cantidad": "0", 
+        "cantidad": "1", 
         "foto": "./img/sushi-06.png"
     },
     {   "id": "5", 
         "nombre": "Tropical 6 piezas",
         "descripcion":"Rolls: Fruti x4 Tropi x4 Furutsu x4", 
         "precio": "1200", 
-        "cantidad": "0", 
+        "cantidad": "1", 
         "foto":"./img/sushi-05.png"
     },
     {   "id": "4", 
         "nombre": "Niguiri Salmón rosado",
         "descripcion": "Bocados de arroz con finas lonjas de salmón rosado.",
         "precio": "48", 
-        "cantidad": "0", 
+        "cantidad": "1", 
         "foto":"./img/sushi-04.png"
     },
     { "id": "3",
       "nombre": "Pulpo gratinado",
       "descripcion":"Arroz con pulpo, con queso parmesano, con salsa a base de mayonesa y cilantro.", 
       "precio": "176", 
-      "cantidad": "0", 
+      "cantidad": "1", 
       "foto":"./img/sushi-03.png"
     },
     { "id": "2",
       "nombre": "Salmón gratinado", 
       "descripcion":"Bocado de arroz con fina lonja de salmón rosado con queso parmesano flambeadito.", 
       "precio": "208", 
-      "cantidad": "0", 
+      "cantidad": "1", 
       "foto":"./img/sushi-02.png"
     },
     { "id": "1", 
       "nombre": "Philamaki",
       "descripcion":"Salmón rosado, Philadelphia y verdeo.", 
       "precio": "64", 
-      "cantidad": "0", 
+      "cantidad": "1", 
       "foto":"./img/sushi-01.png"
     }
   

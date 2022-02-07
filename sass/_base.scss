@@ -8,12 +8,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
 // FUENTES TIPOGRAFICAS //
 $fuente-links: 'Goudy Bookletter 1911', serif;
 $fuente-parrafos: 'Montaga', serif;
 $fuente-titulos: 'Roboto Slab', serif;
-$funete-titulos-2: 'Poppins', sans-serif;
+$fuente-titulos-2: 'Poppins', sans-serif;
+$brand: 'Comforter', cursive;
+
+h1 { 
+	font-family: $brand;
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+}
 
 // PALETA COLORES //
 $color-0: #F25C05;
@@ -22,21 +30,7 @@ $color-secundario: #F29C50;
 $color-terciario:#BFB636;
 $color-extra: #5C6373;
 
-// OTRAS PALETAS DE ADOBE COLOR //
 
-/* Color Theme Swatches in Hex */
-$Tasty-sushi-rolls-on-white-background-1-hex: #F23545;
-$Tasty-sushi-rolls-on-white-background-2-hex: #F2DC6B;
-$Tasty-sushi-rolls-on-white-background-3-hex: #F26B1D;
-$Tasty-sushi-rolls-on-white-background-4-hex: #F21905;
-$Tasty-sushi-rolls-on-white-background-5-hex: #F2F2F2;
-
-/* Color Theme Swatches in Hex */
-$baked-hot-sushi-rolls-on-a-dark-background-Hot-fried-Sushi-Roll-Sushi-menu-1-hex: #F29F05;
-$baked-hot-sushi-rolls-on-a-dark-background-Hot-fried-Sushi-Roll-Sushi-menu-2-hex: #F28705;
-$baked-hot-sushi-rolls-on-a-dark-background-Hot-fried-Sushi-Roll-Sushi-menu-3-hex: #F25C05;
-$baked-hot-sushi-rolls-on-a-dark-background-Hot-fried-Sushi-Roll-Sushi-menu-4-hex: #8C2703;
-$baked-hot-sushi-rolls-on-a-dark-background-Hot-fried-Sushi-Roll-Sushi-menu-5-hex: #0D0D0D;
 
 // BOTONES //
 .bt-compra {

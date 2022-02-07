@@ -30,7 +30,7 @@
 #listaLocales{
     background-color:$color-terciario ;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
